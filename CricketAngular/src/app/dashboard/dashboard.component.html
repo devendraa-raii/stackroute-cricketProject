@@ -1,0 +1,31 @@
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="logo-image">
+          <!-- <img src="./gettyimages-518022060-612x612.jpg" class="img-fluid"> -->
+      </div>
+        <span class="navbar-brand" >CricketMANIA!</span>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="link" ><a routerLink="/dashboard/matches">Matches</a></li>
+        <li class="link"><a  routerLink="/dashboard/myrecommendations">Recommendations</a></li>
+        <li class="link"><a  routerLink="/dashboard/ranking">Player Rankings</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li> <p>
+          <button type="button" class="btn btn-success btn-lg">
+            <span class="glyphicon glyphicon-user"></span> Hello, {{user}}
+          </button>
+        </p> </li>
+        <li id="log" (click)="logout()"><a class="logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+  
+
+

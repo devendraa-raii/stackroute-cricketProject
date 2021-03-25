@@ -1,0 +1,23 @@
+.recommend{
+    background-color: greenyellow;
+    color:black;
+}
+.unrecommend{
+    background-color: red;
+    color:black;
+}
+
+mat-card{
+    background-image: url(./gettyimages-468573588-2048x2048.jpg);
+    background-size: cover;
+    color: white;
+    /* width: 300px; */
+    /* height: 120px; */
+    padding: auto;
+    
+}
+.card:hover{
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+    transform: scale(1.05);
+  }
+

@@ -1,0 +1,194 @@
+<mat-tab-group animationDuration="500ms">
+    <mat-tab label="ODI">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <h2>Batting Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of odi1">
+                            <td>{{p['Rank']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h2>Bowling Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of odi2">
+                            <td>{{p['Ranking']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h2>All-Rounder Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of odi3">
+                            <td>{{p['Rank']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </mat-tab>
+
+
+
+    <mat-tab label="TEST">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <h2>Batting Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of test1">
+                            <td>{{p['Rank']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h2>Bowling Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of test2">
+                            <td>{{p['Rank']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h2>All-Rounder Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of test3">
+                            <td>{{p['Rank']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </mat-tab>
+
+
+
+    <mat-tab label="Twenty 20">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <h2>Batting Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of tw1">
+                            <td>{{p['Rank']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h2>Bowling Rankings</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of tw2">
+                            <td>{{p['Ranking']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h2>All-Rounder Rankings</h2>
+                <table class="table table-striped" >
+                    <thead>
+                        <th>Rank</th>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Rating</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of tw3">
+                            <td>{{p['Ranking']}}</td>
+                            <td>{{p['Name']}}</td>
+                            <td>{{p['country']}}</td>
+                            <td>{{p['Rating']}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </mat-tab>
+</mat-tab-group>

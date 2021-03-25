@@ -1,0 +1,26 @@
+.mat-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(./sample.jpg);
+    background-size: cover ;
+    /* font-weight: bolder; */
+    color: white;
+    font-size: large;
+    margin: 5px;
+    
+}
+.recommend{
+    background-color: greenyellow;
+    color:black;
+}
+.unrecommend{
+    background-color: red;
+    color:black;
+}
+
+
+.mat-card:hover{
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+    transform: scale(1.05);
+  }

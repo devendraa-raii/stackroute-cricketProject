@@ -1,0 +1,40 @@
+app-pcard{
+    /* width: 25%; */
+    margin:5px; 
+}
+
+app-m-card{
+    /* margin: 5px; */
+    min-width: 24%;
+}
+.btn-success{
+    color: black;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.paginator{
+    margin-right: 500px;
+}
+
+.search-text-field{
+    width: 900px;
+    height:30px;
+    margin: 5px ;
+}
+mat-tab-group{
+    padding-left: 10px;
+}
+
+.body-border{
+    border-left: 10px solid green ;
+    border-radius: 4px;
+}
+
+.jumbotron{
+    height: 40px;
+    text-align: center;
+    padding-bottom: 55px;
+}

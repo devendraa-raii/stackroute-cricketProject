@@ -1,0 +1,9 @@
+<mat-card class="mat-card">
+    <mat-card-content>
+        Type: {{match['type']}} <br>
+        Date: {{match['date']}} <br>
+        Team1: {{match['team-1']}} <br>
+        Team2: {{match['team-2']}} <br>
+        <button mat-raised-button class="{{btn.class[btn.state]}}" (click)="Switch()">{{btn.val[btn.state]}}</button>
+    </mat-card-content>
+</mat-card>

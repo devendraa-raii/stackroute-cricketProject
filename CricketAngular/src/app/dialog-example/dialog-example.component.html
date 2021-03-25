@@ -1,0 +1,67 @@
+
+<h1 mat-dialog-title>Live Score</h1>
+<mat-dialog-content>
+    <div>
+        <h2>{{data.score}}</h2> <br>
+        <h3>Batting Stats</h3><br>
+        <div *ngFor="let object of batting">
+            <h4>{{object['title']}}</h4>
+            <table  class="table table-bordered">
+                <thead>
+                    <th>Batsman</th>
+                    <th>Runs</th>
+                    <th>Balls</th>
+                    <th>6s</th>
+                    <th>4s</th>
+                    <th>Strike Rate</th>
+                    <th>Dismissal</th>
+                </thead>
+                <tr *ngFor="let player of object['scores']">
+                    <td>{{player['batsman']}} </td>
+                    <td>{{player['R']}} </td>
+                    <td>{{player['B']}} </td>
+                    <td>{{player['6s']}} </td>
+                    <td>{{player['4s']}} </td>
+                    <td>{{player['SR']}} </td>
+                    <td>{{player['dismissal-info']}} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div>
+        <h3>Bowling Stats</h3><br>
+        <div *ngFor="let object of bowling">
+            <h4>{{object['title']}}</h4>
+            <table  class="table table-bordered">
+                <thead>
+                    <th>Bowler</th>
+                    <th>Wicket</th>
+                    <th>Overs</th>
+                    <th>Runs</th>
+                    <th>Economy Rate</th>
+                </thead>
+                <tr *ngFor="let player of object['scores']">
+                    <td>{{player['bowler']}} </td>
+                    <td>{{player['W']}} </td>
+                    <td>{{player['O']}} </td>
+                    <td>{{player['R']}} </td>
+                    <td>{{player['Econ']}} </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+</mat-dialog-content>
+
+
+
+
+
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

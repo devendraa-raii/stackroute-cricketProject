@@ -1,0 +1,59 @@
+<div class="body-border">
+    <mat-tab-group  animationDuration="500ms">
+        <mat-tab label="Player">
+          <input class="search-text-field" type="text" placeholder="Search a player" [(ngModel)]="playerName" >
+          <button  class="btn-success" mat-raised-button (click)="find()">Show</button>
+          
+          <div class="container">
+              <app-pcard [player]="player" *ngFor="let player of playerSlice" ></app-pcard>
+          </div>
+          <mat-paginator [length]="players.length"
+                         [pageSize]="6"
+                         [pageSizeOptions]="[3,6,9]"
+                         (page)="OnpageChange($event)">
+
+          </mat-paginator>
+
+          <br>
+          <br>
+          <div class="jumbotron jumbotron-fluid">
+            
+              <h1 class="display-4">RECOMMENDATIONS</h1>
+        </div>
+         
+          <div class="container">
+              <app-pcard [player]="player" *ngFor="let player of recList" [defState]="1">
+              </app-pcard>
+
+          </div>
+        </mat-tab>
+        <mat-tab id="mr" label="Matches">
+            <input class="search-text-field" type="text" placeholder="Search a match" [(ngModel)]="type">
+            <button class="btn-success" mat-raised-button (click)="showData(type)">Find Match</button>
+            <div class="container">
+                <app-m-card [match]="match" *ngFor="let match of pageSlice1"></app-m-card>
+            </div>
+            <mat-paginator class="paginator"  [length]="this.match_type.length"
+                            [pageSize]="5"
+                            [pageSizeOptions]="[5, 10, 25, 100]"
+                            (page)="OnPageChange($event)"></mat-paginator> 
+            <br>
+            <br>
+            <div class="jumbotron jumbotron-fluid">
+                  <h1 class="display-4">RECOMMENDATIONS</h1>
+            </div>
+            
+            <div class="container">
+               <div *ngFor="let data of matchRecommendations"> 
+                    <app-m-card [match]="match" *ngFor="let match of data" [defState]="1"></app-m-card>
+            </div>
+                   
+            
+                <!-- <mat-paginator  [length]="this.matchRecommendations.length"
+                            [pageSize]="5"
+                            [pageSizeOptions]="[5, 10, 25, 100]"
+                            (page)="OnPageChange($event)"></mat-paginator> -->
+            </div>
+        </mat-tab>
+      </mat-tab-group>
+</div>

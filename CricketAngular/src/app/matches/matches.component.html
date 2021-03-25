@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+  #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers tr:nth-child(even){background-color: #F2F2F2;}
+#customers tr:hover {background-color: #ddd;}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <!-- <img src="./1.png"> -->
+      <!-- <div class="container">
+        <h1 class="display-4">MATCH CALENDAR</h1>
+        <p class="lead">One-stop-shop for all the matches!</p>
+      </div> -->
+    </div>
+    <!-- <input type="text" [(ngModel)]="team" placeholder="Search........"> -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Search</span>
+      </div>
+      <input type="text" class="form-control" [(ngModel)]="team" placeholder="search by team, match type..." aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <mat-tab-group animationDuration="1500ms">
+
+      <mat-tab label="Upcoming Matches">
+        <table id="customers">
+          <tr id="customers">
+            <th>Date</th>
+            <th>Team-1</th>
+            <th>Team-2</th>
+            <!-- <th>squad</th>
+            <th>matchStarted</th> -->
+            <th>Type</th>
+          </tr>
+        <tr *ngFor ="let match of matches |filter:team | paginate: { itemsPerPage: 10, currentPage: p1 ,id:'first'}">
+            <td>{{match.date.substring(0,10)}}</td>
+            <td>{{match["team-1"]}}</td>
+            <td>{{match["team-2"]}}</td>
+            <!-- <td>{{match.squad}}</td>
+            <td>{{match.matchStarted}}</td> -->
+            <td>{{match.type?match.type:"--"}}</td>
+            
+          </tr>
+          
+          </table>
+          <pagination-controls (pageChange)="p1 = $event" id='first'></pagination-controls>
+      </mat-tab>
+
+      <mat-tab label="Old Matches">
+        <table id="customers">
+          <tr >
+            <th>Description</th>
+            <!-- <th>Title</th> -->
+            <!-- <th>Score Details</th> -->
+            <th> Match Details</th>
+          </tr>
+        <tr *ngFor ="let old_match of old_matches |filter:team | paginate: { itemsPerPage: 10, currentPage: p2,id:'second'}" >
+            <td>{{old_match.description}}</td>
+            <!-- <td>{{old_match.title}}</td> -->
+            <td><button mat-raised-button (click)="openDialog(old_match['unique_id'],true)">View Details</button></td>
+        </tr>
+        <pagination-controls (pageChange)="p2 = $event" id='second'></pagination-controls>
+          </table>
+          
+      </mat-tab>
+      <mat-tab label="Current Matches">
+        <table id="customers">
+          <tr>
+            <th>Date</th>
+            <th>Team-1</th>
+            <th>Team-2</th>
+            <th>Check Current Score</th>
+          </tr>
+        <tr *ngFor ="let match of current_match |filter:team| paginate: { itemsPerPage: 10, currentPage: p3,id:'third' }">
+            <td>{{match.date.substring(0,10)}}</td>
+            <td>{{match["team-1"]}}</td>
+            <td>{{match["team-2"]}}</td>
+            <td><button mat-raised-button (click)="openDialog(match['unique_id'],match.matchStarted)">Check Live score!</button></td>
+          </tr>
+          <pagination-controls (pageChange)="p3 = $event" id='third'></pagination-controls>
+          </table>
+          
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</body>
+</html>

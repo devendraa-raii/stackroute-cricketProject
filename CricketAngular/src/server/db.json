@@ -1,0 +1,562 @@
+{
+    "ODI1":[
+        {
+            "Rank":1,
+            "Name":"Virat Kohli",
+            "country":"India",
+            "Rating":870
+        },
+        {
+            "Rank":2,
+            "Name":"Rohit Sharma",
+            "country":"India",
+            "Rating":842
+        },
+        {
+            "Rank":3,
+            "Name":"Babar Azam",
+            "country":"Pakistan",
+            "Rating":837
+        },
+        {
+            "Rank":4,
+            "Name":"Ross Taylor",
+            "country":"New Zealand",
+            "Rating":818
+        },
+        {
+            "Rank":5,
+            "Name":"Aaron Finch",
+            "country":"Australia",
+            "Rating":791
+        },
+        {
+            "Rank":6,
+            "Name":"Faf du Plessis",
+            "country":"South Africa",
+            "Rating":790
+        },
+        {
+            "Rank":7,
+            "Name":"David Warner",
+            "country":"Australia",
+            "Rating":773
+        },
+        {
+            "Rank":8,
+            "Name":"Shai Hope",
+            "country":"West Indies",
+            "Rating":773
+        },
+        {
+            "Rank":9,
+            "Name":"Kane Williamson",
+            "country":"New Zealand",
+            "Rating":765
+        },
+        {
+            "Rank":10,
+            "Name":"Quinton de Kock",
+            "country":"South Africa",
+            "Rating":755
+        }
+    ],
+
+    "ODI2":[
+        {
+            "Ranking": 1,
+            "Name": "Trent Boult",
+            "country": "New Zealand",
+            "Rating" : 722
+        },
+        {
+            "Ranking": 2,
+            "Name": "Mujeeb Ur Rahman",
+            "country": "Afghanistan",
+            "Rating" : 708   
+        },
+        {
+            "Ranking": 3,
+            "Name": "Jasprit Bumrah",
+            "country": "India",
+            "Rating" : 700   
+        },
+        {
+            "Ranking": 4,
+            "Name": "Mehidy Hasan",
+            "country": "Bangladesh",
+            "Rating" : 694     
+        },
+        {
+            "Ranking": 5,
+            "Name": "Chris Woakes",
+            "country": "England",
+            "Rating" : 675  
+        },
+        {
+            "Ranking": 6,
+            "Name": "Kagiso Rabada",
+            "country": "South Africa",
+            "Rating" : 665   
+        },
+        {
+            "Ranking": 7,
+            "Name": "Josh Hazzlewood",
+            "country": "Australia",
+            "Rating" : 660    
+        },
+        {
+            "Ranking": 8,
+            "Name": "Mustafizur Rahman",
+            "country": "Bangladesh",
+            "Rating" : 658 
+        },
+        {
+            "Ranking": 9,
+            "Name": "Mohammad Amir",
+            "country": "Pakistan",
+            "Rating" : 647
+        },
+        {
+            "Ranking": 10,
+            "Name": "Pat Cummins",
+            "country": "Australia",
+            "Rating" : 646   
+        }
+    ],
+   
+    "ODI3":[
+        {
+            "Rank":1,
+            "Name":"Shakib Al Hasan",
+            "country":"Bangladesh",
+            "Rating":420
+        },
+        {
+            "Rank":2,
+            "Name":"Mohammad nabi",
+            "country":"Afghanistan",
+            "Rating":294
+        },
+        {
+            "Rank":3,
+            "Name":"Chris Woakes",
+            "country":"England",
+            "Rating":281
+        },
+        {
+            "Rank":4,
+            "Name":"Ben Stokes",
+            "country":"England",
+            "Rating":276
+        },
+        {
+            "Rank":5,
+            "Name":"Imad Wasim",
+            "country":"Pakistan",
+            "Rating":271
+        },
+        {
+            "Rank":6,
+            "Name":"Rashid Khan",
+            "country":"Afghanistan",
+            "Rating":270
+        },
+        {
+            "Rank":7,
+            "Name":"Colin de Grandhomme",
+            "country":"New Zealand",
+            "Rating":265
+        },
+        {
+            "Rank":8,
+            "Name":"Ravindra Jadeja",
+            "country":"India",
+            "Rating":253
+        },
+        {
+            "Rank":9,
+            "Name":"Mitchell Santner",
+            "country":"New Zealand",
+            "Rating":251
+        },
+        {
+            "Rank":10,
+            "Name":"Sean Williams",
+            "country":"Zimbabwe",
+            "Rating":238
+        }
+    ],
+    "TEST1":[
+        {
+            "Rank":1,
+            "Name":"Kane Williamson",
+            "country":"New Zealand",
+            "Rating":919
+          },
+          {
+            "Rank":2,
+            "Name":"Steve Smith",
+            "country":"New Zealand",
+            "Rating":891
+          },
+          {
+            "Rank":3,
+            "Name":"Marnus Labuschagne",
+            "country":"New Zealand",
+            "Rating":878
+          },
+          {
+            "Rank":4,
+            "Name":"Joe Root",
+            "country":"England",
+            "Rating":831
+          },
+          {
+            "Rank":5,
+            "Name":"Virat Kohli",
+            "country":"India",
+            "Rating":814
+          },
+          {
+            "Rank":6,
+            "Name":"Babar Azam",
+            "country":"Pakistan",
+            "Rating":760
+          },
+          {
+            "Rank":7,
+            "Name":"Rishabh Pant",
+            "country":"India",
+            "Rating":747
+          },
+          {
+            "Rank":8,
+            "Name":"Henry Nicholls",
+            "country":"New Zealand",
+            "Rating":747
+          },
+          {
+            "Rank":9,
+            "Name":"Rohit Sharma",
+            "country":"India",
+            "Rating":747
+          },
+          {
+            "Rank":10,
+            "Name":"David Warner",
+            "country":"New Zealand",
+            "Rating":724
+          }
+    ],
+    "TEST2":[
+		{
+			"Rank":1,
+			"Name":"Pat Cummins",
+			"country":"Australia",
+			"Rating":908
+		},
+		{
+			"Rank":2,
+			"Name":"Ravichandran Ashwin",
+			"country":"India",
+			"Rating":850
+		},
+		{
+			"Rank":3,
+			"Name":"Neil Wagner",
+			"country":"New Zealand",
+			"Rating":825
+		},
+		{
+			"Rank":4,
+			"Name":"James Anderson",
+			"country":"England",
+			"Rating":822
+		},
+		{
+			"Rank":5,
+			"Name":"Josh Hazlewood",
+			"country":"Australia",
+			"Rating":816
+		},
+		{
+			"Rank":6,
+			"Name":"Tim Southee",
+			"country":"New Zealand",
+			"Rating":811
+		},
+		{
+			"Rank":7,
+			"Name":"Stuart Broad",
+			"country":"England",
+			"Rating":792
+		},
+		{
+			"Rank":8,
+			"Name":"Kagiso Rabada",
+			"country":"South Africa",
+			"Rating":753
+		},
+		{
+			"Rank":9,
+			"Name":"Jasprit Bumrah",
+			"country":"India",
+			"Rating":739
+		},
+		{
+			"Rank":10,
+			"Name":"Jason Holder",
+			"country":"West Indies",
+			"Rating":738
+		}
+	],
+    "TEST3":[
+        {
+			"Rank":1,
+			"Name":"Jason Holder",
+			"country":"West Indies",
+			"Rating":407
+		},
+		{
+			"Rank":2,
+			"Name":"Ben Stokes",
+			"country":"England",
+			"Rating":393
+		},
+		{
+			"Rank":3,
+			"Name":"Ravindra Jadeja",
+			"country":"India",
+			"Rating":386
+		},
+		{
+			"Rank":4,
+			"Name":"Ravichandran Ashwin",
+			"country":"India",
+			"Rating":353
+		},
+		{
+			"Rank":5,
+			"Name":"Shakib Al Hasan",
+			"country":"Bangladesh",
+			"Rating":362
+		},
+		{
+			"Rank":6,
+			"Name":"Kyle Jamieson",
+			"country":"New Zealand",
+			"Rating":293
+		},
+		{
+			"Rank":7,
+			"Name":"Mitchell Starc",
+			"country":"Australia",
+			"Rating":275
+		},
+		{
+			"Rank":8,
+			"Name":"Colin de Grandhomme",
+			"country":"New Zealand",
+			"Rating":258
+		},
+		{
+			"Rank":9,
+			"Name":"Pat Cummins",
+			"country":"Australia",
+			"Rating":249
+		},
+		{
+			"Rank":10,
+			"Name":"Chris Woakes",
+			"country":"England",
+			"Rating":238
+		}
+    ],
+    "T201":[
+        {
+            "Rank":1,
+            "Name":"Dawid Malan",
+            "country":"England",
+            "Rating":894
+          },
+          {
+            "Rank":2,
+            "Name":"Aaron Finch",
+            "country":"New Zealand",
+            "Rating":830
+          },
+          {
+            "Rank":3,
+            "Name":"Babar Azam",
+            "country":"Pakistan",
+            "Rating":801
+          },
+          {
+            "Rank":4,
+            "Name":"Lokesh Rahul",
+            "country":"India",
+            "Rating":771
+          },
+          {
+            "Rank":5,
+            "Name":"Virat Kohli",
+            "country":"India",
+            "Rating":744
+          },
+          {
+            "Rank":6,
+            "Name":"Rassie van der Dussen",
+            "country":"South Africa",
+            "Rating":700
+          },
+          {
+            "Rank":7,
+            "Name":"Glenn Maxwell",
+            "country":"New Zealand",
+            "Rating":694
+          },
+          {
+            "Rank":8,
+            "Name":"Martin Guptill",
+            "country":"New Zealand",
+            "Rating":681
+          },
+          {
+            "Rank":9,
+            "Name":"Hazratullah",
+            "country":"Afghanistan",
+            "Rating":676
+          },
+          {
+            "Rank":10,
+            "Name":"Devon Conway",
+            "country":"New Zealand",
+            "Rating":660
+          }
+    ],
+    "T202":[
+        {
+            "Ranking": 1,
+            "Name": "Rashid Khan",
+            "country": "Afghanistan",
+            "Rating" : 736    
+       },
+       {
+            "Ranking": 2,
+            "Name": "Tabraiz Shamsi",
+            "country": "South Africa",
+            "Rating" : 733 
+       },
+       {
+            "Ranking": 3,
+            "Name": "Mujeeb Ur Rahman",
+            "country": "Afghanistan",
+            "Rating" : 730 
+       },
+       { 
+           "Ranking": 4,
+            "Name": "Ashton Agar",
+            "country": "Australia",
+            "Rating" : 702 
+        },
+        {
+            "Ranking": 5,
+            "Name": "Adil Rashid",
+            "country": "England",
+            "Rating" : 699 
+        },
+        {
+            "Ranking": 6,
+            "Name": "Adam Zampa",
+            "country": "Australia",
+            "Rating" : 663 
+        },
+        {
+            "Ranking": 7,
+            "Name": "Mitchell Santner",
+            "country": "New Zealand",
+            "Rating" : 654 
+        },
+        {
+            "Ranking": 8,
+            "Name": "Ish Sodhi",
+            "country": "New Zealand",
+            "Rating" : 642 
+        },
+        {
+            "Ranking": 9,
+            "Name": "Tim Southee",
+            "country": "New Zealand",
+            "Rating" : 641 
+        },
+        {
+            "Ranking": 10,
+            "Name": "Lakshan Rangika",
+            "country": "Sri Lanka",
+            "Rating" : 639 
+        }
+    ],
+    "T203":[
+        {
+            "Ranking": 1,
+            "Name": "Mohammad Nabi",
+            "country": "Afghanistan",
+            "Rating" : 294
+        },
+        {
+            "Ranking": 2,
+            "Name": "Shakib Al Hasan",
+            "country": "Bangladesh",
+            "Rating" : 268 
+        },
+        {
+            "Ranking": 3,
+            "Name": "Glenn Maxwell",
+            "country": "Australia",
+            "Rating" : 226 
+        },
+        {
+            "Ranking": 4,
+            "Name": "Richie Berrington",
+            "country": "Scotland",
+            "Rating" : 194 
+        },
+        {
+            "Ranking": 5,
+            "Name": "Sean Williams",
+            "country": "Zimbabwe",
+            "Rating" : 190 
+        },
+        {
+            "Ranking": 6,
+            "Name": "Gareth Delany",
+            "country": "Ireland",
+            "Rating" : 159 
+        },
+        {
+            "Ranking": 7,
+            "Name": "Khawar Ali",
+            "country": "Oman",
+            "Rating" : 159 
+        },
+        {
+            "Ranking": 8,
+            "Name": "Collins Obuya",
+            "country": "Kenya",
+            "Rating" : 153 
+        },
+        {
+            "Ranking": 9,
+            "Name": "Rohan Mustafa",
+            "country": "United Arab Emirates",
+            "Rating" : 152 
+        },
+        {
+            "Ranking": 10,
+            "Name": "Zeeshan Maqsood",
+            "country": "Oman",
+            "Rating" : 135 
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+<div class="body">
+
+
+<mat-dialog-content>
+ 
+<div class="container mt50 layout-spacing">
+    <div class="row main-container">
+      <div class="col-sm-12 text-center">
+        <div class="row">
+          <div class="col-sm-6 text center">
+            <img src="{{playerStats.imageURL}}" alt="">
+            <div>
+           <h2>{{playerStats.name}}</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 text-left">
+            <p><b>Full name :</b> {{playerStats.fullName}}</p>
+            <p><b>Age : </b>{{playerStats.currentAge}}</p>
+            <p><b>Born : </b>{{playerStats.born}}</p>
+            <p><b>Role : </b>{{playerStats.playingRole}}</p>
+            <p><b>Bowling style : </b>{{playerStats.bowlingStyle}}</p>
+            <p><b>Batting style : </b>{{playerStats.battingStyle}}</p>
+            <p><b>Major Teams : </b>{{playerStats.majorTeams}}</p>
+            <p><b>Info : </b>{{playerStats.profile}}</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-left">Batting Statistics</h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>League</th>
+                  <th>50</th>
+                  <th>100</th>
+                  <th>St</th>
+                  <th>Ct</th>
+                  <th>6s</th>
+                  <th>4s</th>
+                  <th>Ave</th>
+                  <th>HS</th>
+                  <th>Runs</th>
+                  <th>NO</th>
+                  <th>Innings</th>
+                  <th>Matches</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of battingArray">
+                  <td>{{data[0]}}</td>
+                  <td>{{data[1]['50']}}</td>
+                  <td>{{data[1]['100']}}</td>
+                  <td>{{data[1].St}}</td>
+                  <td>{{data[1].Ct}}</td>
+                  <td>{{data[1]['6s']}}</td>
+                  <td>{{data[1]['4s']}}</td>
+                  <td>{{data[1].Ave}}</td>
+                  <td>{{data[1].HS}}</td>
+                  <td>{{data[1].Runs}}</td>
+                  <td>{{data[1].NO}}</td>
+                  <td>{{data[1].Inns}}</td>
+                  <td>{{data[1].Mat}}</td>
+                </tr>
+                <tr *ngIf="battingArray<=0">
+                  <td colspan="13">No data found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-left">Bowling Statistics</h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <tr>
+                      <th>League</th>
+                      <th>10</th>
+                      <th>5w</th>
+                      <th>4w</th>
+                      <th>Econ</th>
+                      <th>Ave</th>
+                      <th>BBM</th>
+                      <th>BBI</th>
+                      <th>Wkts</th>
+                      <th>Runs</th>
+                      <th>Balls</th>
+                      <th>Inns</th>
+                      <th>Mat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of bowlingArray">
+                  <td>{{data[0]}}</td>
+                  <td>{{data[1]['10']}}</td>
+                  <td>{{data[1]['5w']}}</td>
+                  <td>{{data[1]['4w']}}</td>
+                  <td>{{data[1].Econ}}</td>
+                  <td>{{data[1].Ave}}</td>
+                  <td>{{data[1].BBM}}</td>
+                  <td>{{data[1].BBI}}</td>
+                  <td>{{data[1].Wkts}}</td>
+                  <td>{{data[1].Runs}}</td>
+                  <td>{{data[1].Balls}}</td>
+                  <td>{{data[1].Inns}}</td>
+                  <td>{{data[1].Mat}}</td>
+                </tr>
+                <tr *ngIf="bowlingArray <=0">
+                  <td colspan="13">No data found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Back</button>
+  </mat-dialog-actions>
+
+</div>
